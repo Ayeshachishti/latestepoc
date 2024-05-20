@@ -1,4 +1,39 @@
-requests
-pytest
-pytest-html
-jsonschema
+# Weather API Automated Tests
+
+This project contains automated tests for the Weather API using Python, pytest, and jsonschema. The tests validate the responses from the API against predefined JSON schemas to ensure data correctness.
+
+## Setup
+
+### Prerequisites
+
+- Python 3.7 or later
+- pip (Python package installer)
+
+### Installation
+
+1. **Clone the repository**:
+
+    ```sh
+    git clone https://github.com/your-repo/weather_api_tests.git
+    cd weather_api_tests
+    ```
+
+2. **Create a virtual environment** (optional but recommended):
+
+    ```sh
+    python -m venv venv
+    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    ```
+
+3. **Install the required libraries**:
+
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+### Configuration
+
+Replace the placeholder API key in `tests/test_weather_api.py` with your actual Weather API key:
+
+```python
+API_KEY = "39d797f396b049ad900173658241405"

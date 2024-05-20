@@ -11,6 +11,11 @@ class WeatherApiClient:
         response = requests.get(url)
         return response
 
+    def get_forecast(self, location, days):
+        url = f"{self.BASE_URL}/forecast.json?key={self.api_key}&q={location}&days={days}"
+        response = requests.get(url)
+        return response
+
     def post_example(self, endpoint, payload):
         url = f"{self.BASE_URL}/{endpoint}"
         response = requests.post(url, json=payload)
